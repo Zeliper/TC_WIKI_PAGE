@@ -2,7 +2,7 @@
 title: Active Workspace
 description: 
 published: true
-date: 2023-07-10T08:22:07.799Z
+date: 2023-07-10T09:20:55.942Z
 tags: awc, active workspace, teamcenter
 editor: markdown
 dateCreated: 2023-07-10T07:52:22.189Z
@@ -19,16 +19,8 @@ dateCreated: 2023-07-10T07:52:22.189Z
 # Tabset {.tabset}
 ## Active Workspace 6.1 (Angular)
 
-```js
-let v = 0;
-```
+6.1 특화 가이드라인
 
 ## Active Workspace 6.2 (React)
-Lorem ipsum dolor sit amet.
 
-<details>
-<summary>섹션 테스트</summary>
-```
-  안되지롱
-```
-</details>
+6.2 특화 가이드라인
