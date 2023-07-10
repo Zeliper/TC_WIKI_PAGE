@@ -1,8 +1,8 @@
 ---
-title: Main
+title: 00.Main
 description: 메인 홈 테스트인디요
 published: true
-date: 2023-07-10T09:21:39.137Z
+date: 2023-07-10T09:27:11.743Z
 tags: misc
 editor: markdown
 dateCreated: 2023-07-10T03:50:38.848Z
