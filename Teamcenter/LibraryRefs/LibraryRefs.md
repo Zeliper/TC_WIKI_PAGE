@@ -1,8 +1,8 @@
 ---
-title: 000.Library References
+title: 98.Library References
 description: Teamcenter의 ITK에 활용되는 Library에 대한 가이드 문서
 published: true
-date: 2023-07-10T09:49:26.087Z
+date: 2023-07-10T09:49:57.347Z
 tags: teamcenter, itk
 editor: markdown
 dateCreated: 2023-07-10T09:40:18.228Z
