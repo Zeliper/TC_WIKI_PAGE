@@ -2,7 +2,7 @@
 title: Main
 description: 메인 홈 테스트인디요
 published: true
-date: 2023-07-10T07:42:58.573Z
+date: 2023-07-10T09:21:09.856Z
 tags: misc
 editor: markdown
 dateCreated: 2023-07-10T03:50:38.848Z
@@ -22,6 +22,14 @@ $$
 - [ ] Item 1
 - [ ] Item 2
 - [x] Item 3
+
+
+<details>
+<summary>섹션 테스트</summary>
+```
+  안되지롱
+```
+</details>
 
 H~2~0
 Exp^10^
