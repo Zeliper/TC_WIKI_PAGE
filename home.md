@@ -2,7 +2,7 @@
 title: Main
 description: 메인 홈 테스트인디요
 published: true
-date: 2023-07-10T09:21:09.856Z
+date: 2023-07-10T09:21:39.137Z
 tags: misc
 editor: markdown
 dateCreated: 2023-07-10T03:50:38.848Z
@@ -30,6 +30,10 @@ $$
   안되지롱
 ```
 </details>
+
+1. ㅁㄴㅇㄻㄴㅇㄹ
+	1-1. ㅁㄴㅇㄻㄴㅇㄹ
+2. ㅁㄴㅇㄻㄴㅇㄹ
 
 H~2~0
 Exp^10^
