@@ -2,11 +2,10 @@
 title: Main
 description: 
 published: true
-date: 2023-07-10T17:34:21.114Z
+date: 2023-07-12T06:24:08.983Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T17:34:21.114Z
 ---
 
-# Header
-Your content here
+# Welcome to Teamcenter Development Knowledgebase
