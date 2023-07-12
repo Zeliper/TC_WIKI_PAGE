@@ -2,7 +2,7 @@
 title: Main
 description: 
 published: true
-date: 2023-07-12T06:25:27.123Z
+date: 2023-07-12T06:31:06.934Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T17:34:21.114Z
@@ -10,7 +10,7 @@ dateCreated: 2023-07-10T17:34:21.114Z
 
 # Welcome to Teamcenter Development Knowledgebase
 
-<table border="0">
+<table class="docuLinks" border="0" width="100%">
  <tr>
     <td>Lorem ipsum ...</td>
     <td>Lorem ipsum ...</td>
