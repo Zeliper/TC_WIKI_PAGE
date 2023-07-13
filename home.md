@@ -2,7 +2,7 @@
 title: Main
 description: 
 published: true
-date: 2023-07-13T01:28:55.488Z
+date: 2023-07-13T01:31:32.591Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T17:34:21.114Z
@@ -13,8 +13,8 @@ dateCreated: 2023-07-10T17:34:21.114Z
 <table class="docuLinks" border="0" width="100%">
   <caption>Main Links</caption>
  	<tr>
-    <td><a href="https://docs.sw.siemens.com/en-US/doc/282219420/PL20210421143201885.xid1899404/xid1899405">[Official] Teamcenter 13.3 help by product area</a></td>
-    <td><a href="https://docs.sw.siemens.com/en-US/doc/282219420/PL20220523331910052.xid1899404/xid1899405">[Official] Teamcenter 14.2 help by product area</a></td>
+    <td>추가 예정</td>
+    <td>추가 예정</td>
     <td>추가 예정</td>
     <td>추가 예정</td>
  	</tr>
@@ -29,8 +29,8 @@ dateCreated: 2023-07-10T17:34:21.114Z
 <table class="docuLinks" border="0" width="100%">
   <caption>Teamcenter</caption>
  	<tr>
-    <td>추가 예정</td>
-    <td>추가 예정</td>
+    <td><a href="https://docs.sw.siemens.com/en-US/doc/282219420/PL20210421143201885.xid1899404/xid1899405">[Official] Teamcenter 13.3 help by product area</a></td>
+    <td><a href="https://docs.sw.siemens.com/en-US/doc/282219420/PL20220523331910052.xid1899404/xid1899405">[Official] Teamcenter 14.2 help by product area</a></td>
     <td>추가 예정</td>
     <td>추가 예정</td>
  	</tr>
