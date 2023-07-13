@@ -2,7 +2,7 @@
 title: Main
 description: 
 published: true
-date: 2023-07-12T07:21:58.140Z
+date: 2023-07-13T01:15:28.194Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T17:34:21.114Z
@@ -42,9 +42,9 @@ dateCreated: 2023-07-10T17:34:21.114Z
 <table class="docuLinks" border="0" width="100%">
   <caption>Active Workspace</caption>
  	<tr>
+    <td><a href="https://docs.sw.siemens.com/en-US/doc/282219420/PL20211116078066359.xid1899337?audience=external"></a>Active Workspace 6.1 help by product area</td>
     <td><a href="https://docs.sw.siemens.com/en-US/doc/282219420/PL20220523330405661.xid1899337/xid1899339">Active Workspace 6.2 help by product area</a></td>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
+    <td><a href="https://docs.sw.siemens.com/en-US/doc/224565084/PL20220505708817566.swf/showcase_overview">Active Workspace 6.* Web Framework</a></td>
     <td>Lorem ipsum ...</td>
  	</tr>
  	<tr>
