@@ -2,7 +2,7 @@
 title: 위키 작성 템플릿
 description: 위키의 템플릿들을 저장하는곳입니다.
 published: true
-date: 2023-07-13T07:47:37.928Z
+date: 2023-07-13T08:27:55.294Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T14:03:27.543Z
@@ -43,7 +43,7 @@ console.log(obj);
 <canvas id="Canvas1" width="600" height="400" style="border: 1px solid black; border-radius:5px;">
   
 </canvas>
-<script>
+<script defer>
   var cv = document.getElementById("Canvas1");
   var ctx = cv.getContext("2d");
   function gradient(a, b) {
