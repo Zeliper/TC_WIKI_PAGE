@@ -2,7 +2,7 @@
 title: 위키 작성 템플릿
 description: 위키의 템플릿들을 저장하는곳입니다.
 published: true
-date: 2023-07-13T02:35:34.022Z
+date: 2023-07-13T07:41:58.361Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T14:03:27.543Z
@@ -35,3 +35,11 @@ getProps(uids , props); // uid arr 와 obj arr 지원
 
 console.log(obj);
 ```
+
+## 베지어 곡선
+
+<br></br>
+
+<canvas id="Canvas1" width="600px" height="400px" style="border: 1px solid black; border-radius:5px;">
+  
+</canvas>
