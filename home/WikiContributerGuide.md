@@ -2,7 +2,7 @@
 title: 위키 기여자 가이드
 description: 위키에 기여하기 위한 방법을 설명하는 문서입니다.
 published: true
-date: 2023-07-13T01:56:41.711Z
+date: 2023-07-13T01:56:50.560Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-13T01:56:41.711Z
@@ -44,5 +44,3 @@ dateCreated: 2023-07-13T01:56:41.711Z
     </td>
   </tr>
 </table>
-
-[@username] (https://www.github.com/zeliper)
