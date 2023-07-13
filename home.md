@@ -2,7 +2,7 @@
 title: Main
 description: 
 published: true
-date: 2023-07-13T01:37:06.296Z
+date: 2023-07-13T01:58:46.889Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T17:34:21.114Z
@@ -51,8 +51,8 @@ dateCreated: 2023-07-10T17:34:21.114Z
     <td><a href="https://docs.sw.siemens.com/en-US/doc/282219420/PL20211116078066359.Configuration/xid1348837">[Official] Active Workspace 6.1 Configuration and Extensibility</a></td>
  	</tr>
  	<tr>
-    <td><a hrep="https://docs.sw.siemens.com/en-US/doc/282219420/PL20211116077788213.showcase/?audience=external">[Official] Active Workspace 6.1 Pattern Library</a></td>
-    <td><a hrep="https://docs.sw.siemens.com/ko-KR/doc/282219420/PL20220523330558087.showcase/?audience=external">[Official] Active Workspace 6.2 Pattern Library</a></td>
+    <td><a href="https://docs.sw.siemens.com/en-US/doc/282219420/PL20211116077788213.showcase/?audience=external">[Official] Active Workspace 6.1 Pattern Library</a></td>
+    <td><a href="https://docs.sw.siemens.com/ko-KR/doc/282219420/PL20220523330558087.showcase/?audience=external">[Official] Active Workspace 6.2 Pattern Library</a></td>
     <td>추가 예정</td>
     <td>추가 예정</td>
  	</tr>
