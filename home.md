@@ -2,7 +2,7 @@
 title: Main
 description: 
 published: true
-date: 2023-07-13T01:34:28.424Z
+date: 2023-07-13T01:37:06.296Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T17:34:21.114Z
@@ -13,8 +13,8 @@ dateCreated: 2023-07-10T17:34:21.114Z
 <table class="docuLinks" border="0" width="100%">
   <caption>Main Links</caption>
  	<tr>
-    <td>추가 예정</td>
-    <td>추가 예정</td>
+    <td><a href="/ko/Teamcenter">[Wiki] Teamcenter</a></td>
+    <td><a href="/ko/ActiveWorkspace">[Wiki] ActiveWorkspace</a></td>
     <td>추가 예정</td>
     <td>추가 예정</td>
  	</tr>
