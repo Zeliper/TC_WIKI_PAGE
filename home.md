@@ -2,7 +2,7 @@
 title: Main
 description: 
 published: true
-date: 2023-07-13T01:58:46.889Z
+date: 2023-07-13T02:10:11.061Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T17:34:21.114Z
@@ -22,7 +22,7 @@ dateCreated: 2023-07-10T17:34:21.114Z
     <td>추가 예정</td>
     <td>추가 예정</td>
     <td>추가 예정</td>
-    <td>추가 예정</td>
+    <td><a href="/ko/home/WikiContributerGuide">[Wiki] 기여자 가이드</a></td>
  	</tr>
 </table>
 
