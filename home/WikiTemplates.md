@@ -2,7 +2,7 @@
 title: 위키 작성 템플릿
 description: 위키의 템플릿들을 저장하는곳입니다.
 published: true
-date: 2023-07-13T07:46:11.542Z
+date: 2023-07-13T07:47:37.928Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T14:03:27.543Z
@@ -104,4 +104,6 @@ console.log(obj);
     ctx.lineWidth = 2;
     ctx.strokeStyle = "green";
     bzCurve(lines, 0.3, 1);
+  
+  console.log("VV!");
 </script>
