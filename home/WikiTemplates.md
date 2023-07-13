@@ -2,7 +2,7 @@
 title: 위키 작성 템플릿
 description: 위키의 템플릿들을 저장하는곳입니다.
 published: true
-date: 2023-07-13T07:41:58.361Z
+date: 2023-07-13T07:44:26.062Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T14:03:27.543Z
