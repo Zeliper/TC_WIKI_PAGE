@@ -2,7 +2,7 @@
 title: 000.React로 게시판 만들기
 description: 
 published: true
-date: 2023-07-17T15:40:48.935Z
+date: 2023-07-17T16:45:42.262Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:18:57.278Z
@@ -229,10 +229,193 @@ export default App;
 ### Tabset {.tabset}
 #### Node.js nedb 사용
 
+Node.js의 [nedb](/ko/Study/Libraries/NodeJs/nedb)사용 예제는 `nedb` Branch에 있습니다. 참고하세요.
+
+![github_branch.png](/study/noticeboard/github_branch.png)
+
+`be`프로젝트의 CMD에 다음 명령을 입력합니다 (서버 내려야합니다)
+
+```batch
+npm install nedb --save
+```
+
+그다음 `be/routes/index.js` 파일을 다음과 같이 수정합니다. 전체 소스입니다.
+
+```js
+var express = require('express');
+var router = express.Router();
+
+var Datastore = require('nedb') //nedb Class 로드
+  , db = new Datastore(); //db 변수에 Datasotre 클래스 생성
+  
+db.posts = new Datastore('posts.db'); //posts.db에 db.posts 테이블 데이터 링크
+db.comments = new Datastore('comments.db'); //comments.db에 comments.posts 테이블 데이터 링크
+
+//데이터 베이스 로드
+db.posts.loadDatabase();
+db.comments.loadDatabase();
+
+/* GET home page. */
+router.get('/api/main', (req, res) => {
+  res.send({response: "BackEnd Response Data"});
+});
+
+/* get All Posts */
+router.post('/api/get/allPosts', (req, res) => {
+  db.posts.find({}, function (err, docs) {
+    res.send(docs);
+  });
+});
+
+/* get All Comments */
+router.post('/api/get/allComments', (req, res) => {
+  db.comments.find({}, function (err, docs) {
+    res.send(docs);
+  });
+});
+
+/* posts Clear */
+router.post('/api/reset/posts', (req, res) => {
+  db.posts.remove({}, { multi: true }, function (err, numRemoved) {
+    res.send({msg : numRemoved + " Items Removed"});
+  });
+});
+
+/* comments Clear */
+router.post('/api/reset/comments', (req, res) => {
+  db.comments.remove({}, { multi: true }, function (err, numRemoved) {
+    res.send({msg : numRemoved + " Items Removed"});
+  });
+});
+
+/* create Post */
+router.post('/api/new/post', (req, res)=> {
+  db.posts.count({}, (err,count)=> {
+    db.posts.insert({
+      id : count,
+      title : req.body.title,
+      contents : req.body.contents,
+      author : req.body.author,
+      password : req.body.password,
+      creationDate : Date.now()
+    }, (err2, newPost)=> {
+      console.log(newPost);
+      res.send(newPost);
+    })
+  })
+})
+
+/* create Comments */
+router.post('/api/new/comment', (req, res)=> {
+  db.comments.count({}, (err,count)=> {
+    db.comments.insert({
+      id : count
+    }, (err2, newComment)=> {
+      console.log(newComment);
+      res.send(newComment);
+    })
+  })
+})
+
+module.exports = router;
+```
+
+위 코드는 Post를 생성하고 posts, comments db를 리셋하는 post API를 구성합니다.
+또한 전체 Post및 Comments 조회 기능을 제공합니다.
+
+comment 생성은 껍대기만 우선 구현되어있습니다.
+
+이제 FrontEnd에서 데이터 입출력을 위한 화면을 구성하겠습니다.
+
+우선 FrontEnd의 Routing 처리를 위해 다음 명령을 통해 라이브러리를 설치하겠습니다.
+
+```batch
+npm install react-router-dom
+```
+
+이제 디버깅 환경구성을 위해 `fe\src`폴더 안에 `Debug.js` 파일을 생성하고 다음과 같이 파일을 작성하겠습니다.
+
+```js
+import React, {useState, useEffect} from 'react';
+import './App.css';
+
+function Debug() {
+	useEffect(() => {
+
+	});
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>디버깅 화면입니다.</p>
+      </header>
+    </div>
+  );
+}
+
+export default Debug;
+```
+
+그다음 Route 연결을 위해 `fe\src\App.js`파일을 다음과 같이 수정합니다.
+
+```js
+import React, {useState, useEffect} from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import logo from './logo.svg';
+import './App.css';
+import Debug from './Debug';
+
+function App() {
+	const [data,setData] = useState("");
+	useEffect(() => {
+		async function loadData(){
+			let response = await (await fetch("/api/main")).json();
+			setData(response.response);
+		}
+		
+		loadData();
+	});
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element= {
+              <header className="App-header">
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <p>
+                    {data}
+                  </p>
+                </header>
+            }>
+            </Route>
+            <Route path="/debug" element= {
+              <Debug/>
+            }>
+            </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;
+```
+
+이렇게 설정한뒤 http://localhost:3000/ 과 http://localhost:3000/debug 두개를 접속하여 Route가 잘 되는지 확인합니다.
+
+이제 Post를 입력하고, 값을 가져오는 테스트용 폼을 `Debug.js`에 추가해 보겠습니다.
+
+다음과 같이 `Debug.js`를 수정합니다.
+
+```js
+```
+
 #### Oracle SQL 사용 (작성중)
+
+작성중
 
 #### PostgreSQL 사용 (작성중)
 
+작성중
 
 ## 참여자
 <table>
