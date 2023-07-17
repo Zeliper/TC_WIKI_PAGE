@@ -2,7 +2,7 @@
 title: 000.React로 게시판 만들기
 description: 
 published: true
-date: 2023-07-17T15:21:53.948Z
+date: 2023-07-17T15:40:48.935Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:18:57.278Z
@@ -152,7 +152,79 @@ npm start
 
 정상적으로 실행되면 http://localhost:3000 으로 접속하여 다음 화면이 나오는지 확인합니다.
 
+<img src="/study/noticeboard/react_complete.png" width="450" style="max-width: 100%;">
 
+화면이 나왔으면 FrontEnd 환경구성도 완료됬습니다. 이제 다음 스탭을 통해 BackEnd서버와 FrontEnd서버간의 데이터를 연결하겠습니다.
+
+#### BackEnd <-> FrontEnd 통신 설정
+
+눈치가 빠르신 분들은 이해하셨겠지만 FrontEnd의 `package.json`의 proxy 설정이 BE <-> FE간 통신의 베이스 입니다.
+
+FrontEnd에서 보내는 통신을 BackEnd에 보내서 처리해주기 때문에 복잡한 구성없이 연동이 가능합니다.
+
+`C:\study\be\routes` 폴더의 index.js를 열어 다음과 같이 수정합니다.
+
+`C:\study\be\routes\index.js 전체 코드`
+```js
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/api/main', function(req, res, next) {
+  res.send({
+    response: "BackEnd Response Data"
+  });
+});
+
+module.exports = router;
+```
+
+이렇게 설정한뒤 http://localhost:3001/api/main 으로 접속 할 경우 다음과 같이 출력될 것입니다.
+
+```json
+{response: "BackEnd Response Data"}
+```
+
+이걸 FrontEnd 에서 통신하여 Main화면에 띄워보겠습니다.
+
+`C:\study\fe\src` 폴더의 `App.js` 파일을 열어 다음과 같이 수정하겠습니다. 
+이번에도 전체 소스코드입니다. 어디가 바뀌는지 하나씩 보셔도 되고, 전체 Copy하셔도 됩니다.
+
+```js
+import React, {useState, useEffect} from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+	const [data,setData] = useState("");
+	useEffect(() => {
+		async function loadData(){
+			let response = await (await fetch("/api/main")).json();
+			setData(response.response);
+		}
+		
+		loadData();
+	});
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+			{data}
+        </p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+그러면 다음과 같이 위에서 입력한 `BackEnd Response Data` 가 출력됩니다.
+
+제대로 연동됬는지 확인을 위해 BackEnd의 값을 바꿔가면서 새로고침 해보세요. 
+
+잘 바뀐다면 이제 DB 연동을 할 차례입니다.
 
 ### Tabset {.tabset}
 #### Node.js nedb 사용
