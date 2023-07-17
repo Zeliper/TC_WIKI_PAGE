@@ -2,7 +2,7 @@
 title: 000.React로 게시판 만들기
 description: 
 published: true
-date: 2023-07-17T17:03:21.204Z
+date: 2023-07-17T17:07:35.503Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:18:57.278Z
@@ -226,10 +226,16 @@ export default App;
 
 잘 바뀐다면 이제 DB 연동을 할 차례입니다.
 
+## Database 연동
+
 ### Tabset {.tabset}
 #### Node.js nedb 사용
 
-Node.js의 [nedb](/ko/Study/Libraries/NodeJs/nedb)사용 예제는 `nedb` Branch에 있습니다. 참고하세요.
+> Node.js의 [nedb](/ko/Study/Libraries/NodeJs/nedb)사용 예제 코드는 `nedb` Branch에 있습니다. 참고하세요.
+nedb가 아닌 다른 DB를 사용하는경우 탭에서 다른 DB 사용법을 참고해 주세요{.is-info}
+
+
+
 
 ![github_branch.png](/study/noticeboard/github_branch.png)
 
