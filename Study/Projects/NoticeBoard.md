@@ -2,7 +2,7 @@
 title: 000.React로 게시판 만들기
 description: 
 published: true
-date: 2023-07-17T16:45:42.262Z
+date: 2023-07-17T17:03:21.204Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:18:57.278Z
@@ -290,6 +290,7 @@ router.post('/api/reset/comments', (req, res) => {
 
 /* create Post */
 router.post('/api/new/post', (req, res)=> {
+  console.log(req.body);
   db.posts.count({}, (err,count)=> {
     db.posts.insert({
       id : count,
@@ -407,7 +408,177 @@ export default App;
 다음과 같이 `Debug.js`를 수정합니다.
 
 ```js
+import React, {useState, useEffect} from 'react';
+import './App.css';
+import { json } from 'react-router-dom';
+
+async function postAction(endpoint = "/", request = null){
+  if(request == null){
+    const response = await fetch(endpoint, {method: "POST"});
+    return await response.json();
+  }else{
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(request)
+    });
+    return await response.json();
+  }
+}
+
+function Debug() {
+  const [selectedApi, setSelectedApi] = useState("getPosts");
+  const [log, setLog] = useState("No Response");
+  
+  const [dataAuthor, setDataAuthor] = useState("");
+  const [dataPassword, setDataPassword] = useState("");
+  const [dataTitle, setDataTitle] = useState("");
+  const [dataContents, setDataContents] = useState("");
+
+  let apiChanges = (e)=>{
+    setSelectedApi(e.target.selectedOptions[0].value);
+  }
+
+  let execution = (e)=> {
+    switch(selectedApi){
+      case "getPosts":
+        postAction("/api/get/allPosts").then(res => {
+          setLog(JSON.stringify(res));
+        });
+        break;
+      case "resetPosts":
+        postAction("/api/reset/posts").then(res => {
+          setLog(res.msg);
+        });
+        break;
+      case "createPosts":
+        if(dataAuthor == "" ||
+          dataPassword == "" ||
+          dataTitle == "" ||
+          dataContents == ""){
+            setLog("값을 전부 입력해 주세요");
+          }else{
+            postAction("/api/new/post", {
+              title : dataTitle,
+              contents : dataPassword,
+              author : dataAuthor,
+              password : dataContents
+            }).then(res => {
+              setLog(JSON.stringify(res));
+            });
+        }
+        break;
+    }
+  }
+
+	useEffect(() => {
+
+	});
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div className='span-holder'>
+          <span>API 종류 :</span>
+          <span className='span-contents'>
+            <select name="choice"style={{width: "150px"}} onChange={apiChanges}>
+              <option value="getPosts">Post 가져오기</option>
+              <option value="resetPosts">Post DB 초기화</option>
+              <option value="createPosts">Post 생성</option>
+            </select>
+          </span>
+        </div>
+        <br/>
+        {
+          selectedApi == "createPosts" && (
+            <div>
+              <div className='span-holder'>
+                <span>작성자</span>
+                <span className='span-contents'>
+                  <input value={dataAuthor} onChange={(event) => {
+                    setDataAuthor(event.target.value);
+                  }}></input>
+                </span>
+              </div>
+              <div className='span-holder'>
+                <span>비밀번호</span>
+                <span className='span-contents'>
+                  <input value={dataPassword} onChange={(event) => {
+                    setDataPassword(event.target.value);
+                  }}></input>
+                </span>
+              </div>
+              <div className='span-holder'>
+                <span>제목</span>
+                <span className='span-contents'>
+                  <input value={dataTitle} onChange={(event) => {
+                    setDataTitle(event.target.value);
+                  }}></input>
+                </span>
+              </div>
+              <div className='span-holder'>
+                <span>내용</span>
+                <span className='span-contents'>
+                  <textarea value={dataContents} name="Text1" cols="30" rows="5" onChange={(event) => {
+                    setDataContents(event.target.value);
+                  }}></textarea>
+                </span>
+              </div>
+            </div>
+          )
+        }
+        <br/>
+        <button onClick={execution}>실행</button>
+        <div className='logbox'>
+          <p>
+            {log}
+          </p>
+        </div>
+      </header>
+    </div>
+  );
+}
+
+export default Debug;
 ```
+
+그다음 `fe\src\App.css`를 열어 다음 코드를 마지막에 붙혀넣습니다.
+
+```css
+.span-holder {
+  display :flex;
+  align-items : center;
+}
+
+.span-contents {
+  display :flex;
+  align-items : center;
+  padding-left : 15px;
+}
+
+.logbox{
+  background-color: #3b414e;
+  position: fixed;
+  margin: 0px;
+  word-wrap: break-word;
+  width: 100%;
+  height: 30%;
+  bottom: 0px;
+  font-size: 15px;
+  text-align: start;
+}
+.logbox p{ 
+  padding-left: 20px;
+  padding-right: 20px;
+}
+```
+
+그럼 간단하게 Post 조회, 초기화, 추가를 할 수 있는 Debug메뉴가 완성됩니다.
+
+![debug_menu.png](/study/noticeboard/debug_menu.png)
+
+이제 위에서 해본 내용들을 분석해보며 메인 화면을 구성하면 됩니다.
 
 #### Oracle SQL 사용 (작성중)
 
