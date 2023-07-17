@@ -2,10 +2,10 @@
 title: 99.Development Guide
 description: Teamcenter의 ITK, BMIDE등 개발에 필요한 기술을 정리한 문서
 published: true
-date: 2023-07-10T09:34:35.322Z
+date: 2023-07-10T14:03:17.953Z
 tags: 
 editor: markdown
-dateCreated: 2023-07-10T09:33:40.851Z
+dateCreated: 2023-07-10T14:03:14.942Z
 ---
 
 # Teamcenter Development Guide

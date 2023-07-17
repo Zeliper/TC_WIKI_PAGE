@@ -2,7 +2,7 @@
 title: 01.Teamcenter
 description: 
 published: true
-date: 2023-07-13T01:58:04.236Z
+date: 2023-07-13T01:58:05.792Z
 tags: teamcenter
 editor: markdown
 dateCreated: 2023-07-10T14:02:52.302Z

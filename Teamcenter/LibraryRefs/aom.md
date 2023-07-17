@@ -2,10 +2,10 @@
 title: tccore/aom.h
 description: Application Object Module
 published: true
-date: 2023-07-10T09:57:40.441Z
+date: 2023-07-10T14:03:36.162Z
 tags: 
 editor: markdown
-dateCreated: 2023-07-10T09:42:34.596Z
+dateCreated: 2023-07-10T14:03:34.035Z
 ---
 
 # Application Object Module (AOM)

@@ -2,10 +2,10 @@
 title: BusinessObject
 description: 
 published: true
-date: 2023-07-10T09:57:09.272Z
+date: 2023-07-10T14:03:32.975Z
 tags: 
 editor: markdown
-dateCreated: 2023-07-10T09:57:09.272Z
+dateCreated: 2023-07-10T14:03:30.898Z
 ---
 
 # BusinessObject

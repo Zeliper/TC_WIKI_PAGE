@@ -2,7 +2,7 @@
 title: nedb
 description: Node.js의 파일 베이스 데이터베이스 시스템
 published: true
-date: 2023-07-17T14:56:42.351Z
+date: 2023-07-17T14:56:43.999Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:50:18.450Z

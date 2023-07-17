@@ -1,16 +1,15 @@
 ---
-title: 위키 작성 템플릿
-description: 위키의 템플릿들을 저장하는곳입니다.
+title: Test Document 1(EN)
+description: 
 published: true
-date: 2023-07-13T08:45:12.217Z
+date: 2023-07-10T14:03:39.511Z
 tags: 
 editor: markdown
-dateCreated: 2023-07-10T14:03:27.543Z
+dateCreated: 2023-07-10T14:03:37.504Z
 ---
 
 # Header
-한국어 Here
-
+English Here?
 
 ## 예제 1
 
@@ -35,11 +34,3 @@ getProps(uids , props); // uid arr 와 obj arr 지원
 
 console.log(obj);
 ```
-
-## 베지어 곡선
-
-<br></br>
-
-<canvas id="Canvas1" width="600" height="400" style="border: 1px solid black; border-radius:5px;">
-  
-</canvas>

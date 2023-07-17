@@ -2,7 +2,7 @@
 title: 02.Active Workspace
 description: 
 published: true
-date: 2023-07-13T01:57:49.390Z
+date: 2023-07-13T01:57:50.813Z
 tags: awc, active workspace, teamcenter
 editor: markdown
 dateCreated: 2023-07-10T14:02:42.935Z
