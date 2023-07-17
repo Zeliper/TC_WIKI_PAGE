@@ -2,7 +2,7 @@
 title: 01.Libraries
 description: 
 published: true
-date: 2023-07-17T14:44:16.675Z
+date: 2023-07-17T14:50:29.386Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:31:57.425Z
@@ -14,6 +14,7 @@ dateCreated: 2023-07-17T14:31:57.425Z
   <caption>Node.js 계열</caption>
  	<tr>
     <td><a href="/ko/Study/Libraries/NodeJs">Node.js</a></td>
+    <td><a href="/ko/Study/Libraries/NodeJs/nedb">[Database] nedb</a></td>
  	</tr>
 </table>
 
