@@ -2,7 +2,7 @@
 title: 000.React로 게시판 만들기
 description: 
 published: true
-date: 2023-07-17T17:14:20.291Z
+date: 2023-07-17T17:15:12.258Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:18:57.278Z
