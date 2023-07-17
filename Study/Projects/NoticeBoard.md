@@ -2,7 +2,7 @@
 title: 000.React로 게시판 만들기
 description: 
 published: true
-date: 2023-07-17T14:57:22.621Z
+date: 2023-07-17T14:58:07.597Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:18:57.278Z
@@ -12,7 +12,7 @@ dateCreated: 2023-07-17T14:18:57.278Z
 
 ## Git Repository (소스 포함)
 
-[Zeliper/notice-board](https://github.com/Zeliper/notice-board)
+Private Git 레포지토리 : [Zeliper/notice-board](https://github.com/Zeliper/notice-board)
 
 ## 준비물
 
