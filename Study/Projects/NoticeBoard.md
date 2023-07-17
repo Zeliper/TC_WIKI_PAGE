@@ -2,7 +2,7 @@
 title: 000.React로 게시판 만들기
 description: 
 published: true
-date: 2023-07-17T17:10:57.465Z
+date: 2023-07-17T17:14:20.291Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:18:57.278Z
@@ -11,7 +11,16 @@ dateCreated: 2023-07-17T14:18:57.278Z
 # React로 게시판 만들기
 
 - #### 목차
-- [1.Git Repo](##Git-Repository)
+	- [Git Repo](##Git-Repository-(-소스-포함))
+  - [준비물](##준비물)
+  - [개발 환경 구성](##개발-환경-구성)
+  	- [개발 폴더 구성](###개발-폴더-구성)
+  	- [Template Project 생성](###Template-Project-생성)
+  		- [Express API BackEnd 서버 생성](####Express-API-BackEnd-서버-생성)
+  		- [React FrontEnd 서버 생성](####React-FrontEnd-서버-생성)
+  - [Database 연동](##Database-연동)
+  - [참여자](##참여자)
+  
 
 ## Git Repository (소스 포함)
 
