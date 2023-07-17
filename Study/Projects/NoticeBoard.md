@@ -2,7 +2,7 @@
 title: 000.React로 게시판 만들기
 description: 
 published: true
-date: 2023-07-17T17:29:23.830Z
+date: 2023-07-17T17:29:42.460Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:18:57.278Z
@@ -10,7 +10,7 @@ dateCreated: 2023-07-17T14:18:57.278Z
 
 # React로 게시판 만들기
 
-<ol data-toc="div.container" data-toc-headings="h2,h3,h4"></ol>
+<ul data-toc></ul>
 
 ## Git Repository (소스 포함)
 
