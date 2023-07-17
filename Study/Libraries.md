@@ -2,7 +2,7 @@
 title: 01.Libraries
 description: 
 published: true
-date: 2023-07-17T14:31:57.425Z
+date: 2023-07-17T14:41:50.737Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:31:57.425Z
@@ -13,16 +13,7 @@ dateCreated: 2023-07-17T14:31:57.425Z
 <table class="docuLinks" border="0" width="100%">
   <caption>Node.js 계열</caption>
  	<tr>
-    <td><a href="/ko/Teamcenter">Node.js</a></td>
-    <td><a href="/ko/ActiveWorkspace">[Wiki] ActiveWorkspace</a></td>
-    <td>추가 예정</td>
-    <td>추가 예정</td>
- 	</tr>
- 	<tr>
-    <td>추가 예정</td>
-    <td>추가 예정</td>
-    <td><a href="/ko/Study">[Wiki] LG 악귀들 공부방</a></td>
-    <td><a href="/ko/home/WikiContributerGuide">[Wiki] 기여자 가이드</a></td>
+    <td><a href="/ko/Study/Libraries/NodeJs">Node.js</a></td>
  	</tr>
 </table>
 
