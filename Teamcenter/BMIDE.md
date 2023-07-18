@@ -1,8 +1,8 @@
 ---
-title: TestTest
+title: 01.BMIDE
 description: 
 published: true
-date: 2023-07-18T01:33:02.929Z
+date: 2023-07-18T01:35:17.667Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-18T01:33:02.929Z
