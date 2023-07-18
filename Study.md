@@ -2,7 +2,7 @@
 title: 99.Study
 description: LG 악귀들 공부방
 published: true
-date: 2023-07-17T14:20:34.896Z
+date: 2023-07-18T00:36:24.294Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-17T14:14:29.788Z
