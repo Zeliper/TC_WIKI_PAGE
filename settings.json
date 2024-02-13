@@ -1,0 +1,49 @@
+{
+    "files.watcherExclude": {
+        "**/.cache/**": true,
+        "**/.history/**": true,
+        "**/node_modules/*/**": false,
+        "**/out/**": true,
+        "a2libs/**": true,
+        "lib/**": true,
+        "node_modules/{[a-z]*,[A-Z]*,.*,@[^s]*,@?[^w]*,**/*.min.js,**/build/**,**/sample/**,**/*.map}": true,
+        "OOTB/**": true,
+        "TODO/**": true
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "search.exclude": {
+        "**/.cache": true,
+        "**/node_modules": false,
+        "bin": true,
+        "node_modules/{[a-z]*,[A-Z]*,.*,@[^s]*,@?[^w]*, **/.min.js, **/build/**, **/sample/**, **/*.map}": true,
+        "OOTB": true,
+        "out": true,
+        "TODO": true
+    },
+    "explorer.autoRevealExclude": {
+        "**/node_modules": false
+    },
+    "typescript.workspaceSymbols.excludeLibrarySymbols": false,
+    "search.useIgnoreFiles": false,
+    "git.autofetch": true,
+    "files.exclude": {
+        ".history": true,
+        "**/.cache": true,
+        "bin": true,
+        "OOTB": true,
+        "TODO": true
+    },
+    "workbench.localHistory.exclude": {
+        "**/.cache": true,
+        "**/.history": true,
+        "**/out": true,
+        "node_modules/{[a-z]*,[A-Z]*,.*,@[^s]*,@?[^w]*, **/.min.js, **/build/**, **/sample/**, **/*.map}": true
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "explorer.confirmDelete": false,
+    "cmake.configureOnOpen": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 10,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "codestream.serverUrl": "https://codestream-us1.service.newrelic.com"
+}
